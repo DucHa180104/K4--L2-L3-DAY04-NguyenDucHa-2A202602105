@@ -1,4 +1,4 @@
-# Mini guideline - nhóm: ______  |  người gán: Nguyễn Đức Hà  |  ngày: 2026-06-06
+# Mini guideline - nhóm: Cá nhân  |  người gán: Nguyễn Đức Hà  |  ngày: 2026-09-16
 
 > Điền file này **trong lúc** gán nhãn, không phải sau khi xong. Mỗi lần bạn dừng lại
 > hơn 10 giây để phân vân, đó là một dòng phải ghi vào đây.
@@ -32,7 +32,7 @@ một câu văn chung chung.
 ### Ca 1 - ảnh `train_12.jpg`, người thứ `1`, khớp `left_ankle`
 
 - Mơ hồ ở chỗ nào: Phần cổ chân bị khuất một phần bởi vật cản phía trước và sát mép khung hình, phân vân giữa việc bỏ qua hay đánh dấu che khuất.
-- Bạn quyết thế nào: Giữ lại điểm, gán trạng thái `v = 1` (occluded) và đặt chấm ở vị trí ước lượng tâm khớp nối.
+- Bạn quyết thế nào: Giữ lại điểm và đặt chấm ở vị trí ước lượng. Bản export sau rework hiện lưu `v = 2`; theo luật của lớp, điểm này nên là `v = 1` vì cổ chân bị che nhưng vẫn nằm trong khung.
 - Vì sao: Khớp vẫn nằm trong biên độ khung hình, việc xóa hoặc cho ra ngoài (`v = 0`) sẽ làm mất điểm trọng yếu của bộ khung xương chân.
 - Nếu người khác quyết ngược lại thì model học sai cái gì: Model sẽ học được thói quen bỏ sót hoặc gán sai cờ biên, dẫn đến đứt gãy thông tin cấu trúc chi dưới khi gặp vật cản tương tự.
 
@@ -43,17 +43,16 @@ một câu văn chung chung.
 - Vì sao: Đảm bảo nguyên tắc đủ 17 điểm cho mọi skeleton, không tự ý cắt bỏ điểm cốt lõi của tay.
 - Nếu người khác quyết ngược lại thì model học sai cái gì: Model sẽ dự đoán sai lệch vị trí các điểm khớp bị che khuất sâu, gây sụt giảm độ chính xác OKS ở các tư thế phức tạp.
 
-### Ca 3 - ảnh `train_19.jpg`, người thứ `2`, khớp `right_wris`
+### Ca 3 - ảnh `train_19.jpg`, người thứ `2`, khớp `right_wrist`
 
 - Mơ hồ ở chỗ nào: Điểm chấm bị lệch nhịp so với tiêu chuẩn giải phẫu chung do cổ tay chuyển động nhanh gây mờ nhòe (motion blur).
-- Bạn quyết thế nào: Kéo chỉnh lại tọa độ tâm điểm dựa theo đường viền bàn tay và tinh chỉnh sau bước kiểm tra với Gold.
+- Bạn quyết thế nào: Tôi đã kéo chỉnh lại tọa độ dựa theo đường viền bàn tay, nhưng evaluator sau rework vẫn xếp điểm này vào lỗi `truot_han`; đây là lỗi còn lại chưa xử lý dứt điểm.
 - Vì sao: Tránh lỗi trượt khớp nặng làm ảnh hưởng trực tiếp đến hệ số dung sai OKS khi đánh giá.
 - Nếu người khác quyết ngược lại thì model học sai cái gì: Model sẽ bị nhiễu nhãn tọa độ, dẫn đến việc dự đoán nhầm vị trí khớp sang các vùng lân cận không chính xác.
 
 ## 4. Sau khi so visibility report với bạn cùng nhóm
->- Thực hiện gán nhãn và kiểm định độc lập hoàn toàn trên tập dữ liệu cá nhân (20 ảnh train).
 
-- Khớp lệch `%v=1` nhiều nhất: `______` (bạn `___%` / họ `___%`)
-- Nguyên nhân là **guideline chưa rõ** hay **một trong hai bên gán sai**:
-- Luật mới bổ sung vào mục 2 sau khi thống nhất:
+Tôi làm bài cá nhân và chưa nhận được thư mục nhãn của một bạn khác, nên chưa chạy được
+chế độ `--compare`. Vì vậy, chưa có số liệu chênh `%v=1` hoặc luật mới được thống nhất từ
+hoạt động kiểm chéo. Tôi không tự tạo tên người review hoặc số liệu so sánh.
 

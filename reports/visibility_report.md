@@ -1,28 +1,28 @@
 # Visibility report
 
-- Thư mục nhãn: `dataset\labels\train`
-- 20 ảnh, 27 skeleton, trung bình 16.11 khớp có v > 0 mỗi người
-- Tổng: v=2 400 | v=1 35 | v=0 24
+- Thư mục nhãn: `C:\Users\ADMIN\OneDrive - Phenikaa University\Desktop\Vin\Day4\K4-DAY04-NguyenDucHa-2A202602105\dataset\labels\train`
+- 20 ảnh, 29 skeleton, trung bình 16.31 khớp có v > 0 mỗi người
+- Tổng: v=2 429 | v=1 44 | v=0 20
 
 | # | Khớp | v=2 | v=1 | v=0 | %v=1 |
 | ---: | --- | ---: | ---: | ---: | ---: |
-| 0 | nose | 26 | 1 | 0 | 4% |
-| 1 | left_eye | 24 | 3 | 0 | 11% |
-| 2 | right_eye | 23 | 4 | 0 | 15% |
-| 3 | left_ear | 22 | 5 | 0 | 19% |
-| 4 | right_ear | 24 | 2 | 1 | 7% |
-| 5 | left_shoulder | 27 | 0 | 0 | 0% |
-| 6 | right_shoulder | 26 | 1 | 0 | 4% |
-| 7 | left_elbow | 25 | 1 | 1 | 4% |
-| 8 | right_elbow | 25 | 2 | 0 | 7% |
-| 9 | left_wrist | 22 | 4 | 1 | 15% |
-| 10 | right_wrist | 24 | 3 | 0 | 11% |
-| 11 | left_hip | 25 | 2 | 0 | 7% |
-| 12 | right_hip | 25 | 2 | 0 | 7% |
-| 13 | left_knee | 20 | 4 | 3 | 15% |
-| 14 | right_knee | 24 | 1 | 2 | 4% |
-| 15 | left_ankle | 18 | 0 | 9 | 0% |
-| 16 | right_ankle | 20 | 0 | 7 | 0% |
+| 0 | nose | 28 | 1 | 0 | 3% |
+| 1 | left_eye | 26 | 3 | 0 | 10% |
+| 2 | right_eye | 25 | 4 | 0 | 14% |
+| 3 | left_ear | 22 | 7 | 0 | 24% |
+| 4 | right_ear | 26 | 2 | 1 | 7% |
+| 5 | left_shoulder | 28 | 1 | 0 | 3% |
+| 6 | right_shoulder | 28 | 1 | 0 | 3% |
+| 7 | left_elbow | 26 | 2 | 1 | 7% |
+| 8 | right_elbow | 27 | 2 | 0 | 7% |
+| 9 | left_wrist | 23 | 5 | 1 | 17% |
+| 10 | right_wrist | 26 | 3 | 0 | 10% |
+| 11 | left_hip | 26 | 3 | 0 | 10% |
+| 12 | right_hip | 27 | 2 | 0 | 7% |
+| 13 | left_knee | 21 | 6 | 2 | 21% |
+| 14 | right_knee | 26 | 2 | 1 | 7% |
+| 15 | left_ankle | 22 | 0 | 7 | 0% |
+| 16 | right_ankle | 22 | 0 | 7 | 0% |
 
 ## Đọc bảng này thế nào
 
